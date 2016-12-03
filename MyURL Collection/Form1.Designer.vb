@@ -22,9 +22,54 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(26, 48)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(358, 20)
+        Me.TextBox1.TabIndex = 0
+        Me.TextBox1.Text = "http://www.microsoft.com/learning/books/"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(133, 129)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(139, 40)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Visit Site"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(133, 227)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(139, 40)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "List Recent Sites"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(422, 355)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "URL Collection"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
 
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
